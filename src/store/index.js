@@ -62,7 +62,7 @@ export default createStore({
     actions: {
         getAllQuestions({ commit }) {
             return new Promise(() => {
-                axios.post("https://opentdb.com/api.php?amount=2&category=18&difficulty=medium&type=multiple")
+                axios.post("https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple")
                     .then((response) => {
                         if(response.status == 200) {
                             commit("GET_ALL_QUESTIONS", response.data.results);
@@ -74,9 +74,6 @@ export default createStore({
             commit("SELECT_ANSWER", { answer, question_id });
             commit("CHECK_SOLVED_QS_NUM");
         },
-        // checkSolvedQuestionNumber({ commit }) {
-        //     commit("CHECK_SOLVED_QS_NUM");
-        // },
     },
     modules: {},
   });

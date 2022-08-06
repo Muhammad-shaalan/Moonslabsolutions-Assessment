@@ -23,6 +23,11 @@
                     : 'text-danger'
                 "
               >
+                <i
+                  class="fa-solid fa-circle-check"
+                  v-if="result.correct_answer == result.chosen_answer"
+                ></i>
+                <i class="fa-solid fa-circle-xmark" v-else></i>
                 {{ result.chosen_answer }}
               </td>
               <td>
