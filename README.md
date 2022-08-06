@@ -20,5 +20,18 @@ npm run build
 npm run lint
 ```
 
+### Packages
+```
+
+Vue js
+Vuex
+Axios
+Bootstrap
+FontAwsome
+```
+
+### I have some suggestions for improvement that we can talk about if you want
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
